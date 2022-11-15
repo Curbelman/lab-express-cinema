@@ -92,7 +92,7 @@ const movies = [
     console.error('Error connecting to mongo', err)
   });
 
-  const Movie = require('./models/Movie.models.js');
+  const Movie = require('./models/Movie.models');
 
   Movie.insertMany(movies)
     .then(movies => {

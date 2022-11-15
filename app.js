@@ -28,7 +28,7 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 const index = require('./routes/index');
 app.use('/', index);
 
-const Movie = require('./models/Movie.models.js');
+const Movie = require('./models/Movie.models');
 app.get('/movies', (req,res)=>{
     mongoose
   .connect('mongodb://localhost/lab-express-cinema')
