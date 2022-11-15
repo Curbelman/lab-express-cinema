@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const movies = [
     {
@@ -92,7 +93,7 @@ const movies = [
     console.error('Error connecting to mongo', err)
   });
 
-  const Movie = require('./models/Movie.models');
+  const Movie = require('../models/Movie.models');
 
   Movie.insertMany(movies)
     .then(movies => {
