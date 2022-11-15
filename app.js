@@ -46,7 +46,7 @@ app.get('/movie/:id', (req,res)=>{
     Movie.find({_id:req.params.id})
     .then ((data)=> {
         const movieSearched = data;
-        res.render('movie', {movieSearched})
+        res.render('movie-details', {movieSearched})
 })
     
 })

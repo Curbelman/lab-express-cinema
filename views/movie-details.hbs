@@ -1,0 +1,16 @@
+{{#each movieSearched}}
+<div>
+    <img src="{{this.image}}">
+    <div>
+        <h2>{{this.title}}</h2>
+        <h3>Director: {{this.director}}</h3>
+        <p style="bold">Stars:</p>
+        <ul>
+            <li>{{this.stars.[0]}}</li>
+            <li>{{this.stars.[1]}}</li>
+            <li>{{this.stars.[2]}}</li>
+        </ul>
+        <p>{{this.description}}</p>
+    </div>
+ {{/each}} 
+</div>
